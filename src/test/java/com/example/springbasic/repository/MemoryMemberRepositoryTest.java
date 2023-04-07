@@ -14,9 +14,9 @@ class MemoryMemberRepositoryTest {
 
     MemoryMemberRepository repository = new MemoryMemberRepository();
 
-    @AfterEach
+    @AfterEach // 테스트 함수가 하나 끝날때마다 실행
     public void afterEach() {
-        repository.clearStore(); // 하나의 테스트가 끝날 때마다 저장소를 지워줘야 전체 테스트 돌렸을 때 에러가 나지 않음
+        repository.clearStore(); // 하나의 테스트가 끝날 때마다 저장소를 지워줘야 전체 테스트 돌렸을 때 에러가 나지 않음 (누적된 데이터 삭제)
     }
 
     @Test

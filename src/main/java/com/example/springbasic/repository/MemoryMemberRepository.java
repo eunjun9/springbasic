@@ -1,9 +1,11 @@
 package com.example.springbasic.repository;
 
 import com.example.springbasic.domain.Member;
+import org.springframework.stereotype.Repository;
 
 import java.util.*;
 
+@Repository
 public class MemoryMemberRepository implements MemberRepository{ // Alt + Enter -> implements method
     // Ctrl + Shift + T -> Test Class 생성
 
